@@ -1,0 +1,34 @@
+-=-=-=-=-=-=-=[ =>  Phase 1  ]-=-=-=-=-=--=-=-
+
+Step #1 . Create Express Generator App 
+          -- npx install express-generator
+
+Step #2 - Install Mongoose Library
+        --npm install mongoose --save
+
+Step #3 - Import Mongoose Library
+
+Step #4 - Create a Modeks Folder
+
+Step #5 - Create a schema for your collection
+        - Collection =studentfa-spin
+
+Step #6 - Create a Mongoose of the same schema colection
+
+Step #7 -- Import Newly created Model into App.js
+
+
+--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=[ =>   Phase 2  ]-=-=-=-=-=--=-=-
+
+Step #8 -- Create the Mongo Db connection
+
+Step #9 -- Create new object of Model
+
+step #10 -- call "save" method -> Create/POST method for collection
+
+--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=[ =>   Phase 3  ]-=-=-=-=-=--=-=-
+
+step #11 -- Refactor our code
+-- made method POST

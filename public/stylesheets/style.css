@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100px;
+  background-color: yellowgreen;
+  background-image:
+    radial-gradient(
+      circle closest-side,
+     
+    );
+}
+
+
+a {
+  color: #00B7FF;
+}
