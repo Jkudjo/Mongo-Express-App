@@ -5,8 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var mongoose = require("mongoose");
-//this connects to the Mongobd at 
-mongoose.connect('mongodb://localhost/CRM');
+//this connects to the Mongobd at localhost
+mongoose.connect('mongodb://localhost/alpha');
 
 
 var studentModel = require('./models/student.model');
@@ -15,6 +15,7 @@ var studentModel = require('./models/student.model');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var studentsRouter = require('./routes/students');
+var productsRouter = require("./routes/products")
 
 
 var app = express();
@@ -29,10 +30,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* Url endpoints */
+/* Url endpoints  */
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/students', studentsRouter);
+app.use("/products", productsRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

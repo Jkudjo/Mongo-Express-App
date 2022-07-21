@@ -8,7 +8,7 @@ Step #2 - Install Mongoose Library
 
 Step #3 - Import Mongoose Library
 
-Step #4 - Create a Modeks Folder
+Step #4 - Create a Models Folder
 
 Step #5 - Create a schema for your collection
         - Collection =studentfa-spin
@@ -32,3 +32,19 @@ step #10 -- call "save" method -> Create/POST method for collection
 
 step #11 -- Refactor our code
 -- made method POST
+-- Made the data dynamic in nature
+
+step 12
+_+_+_+_+_+_+_+_+_+_+_+_+_+
+
+- Using the postman 
+
+step 13
+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+
+-- Read all data from Collection
+--- Read some dta based on condition
+        - Query
+
+-Read a particular data
+        findById
+

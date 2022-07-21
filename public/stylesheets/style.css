@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100px;
-  background-color: yellowgreen;
+  background-color: rgb(205, 182, 50);
   background-image:
     radial-gradient(
       circle closest-side,

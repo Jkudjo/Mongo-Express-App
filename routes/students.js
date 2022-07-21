@@ -10,8 +10,7 @@ router.get('/', function(req, res, next) {
   
 });
 
-/*cRUD GET METHOD
-
+/* cRUD GET METHOD
 router.get('/add', function(req, res, next) {
 
   let newStudent = new StudentModel({
@@ -35,22 +34,25 @@ router.get('/add', function(req, res, next) {
   
 
   
-}); */
+}); End of Get Method*/ 
 
-//CRUD -POST METHOD - dynamic
 
+// =>> CRUD -POST METHOD - dynamic
 router.post('/add', function(req, res, next) {
 
-  console.log(req.body)
+  
 
   let newStudent = new StudentModel({
     
-      // studentId: req.data.firstname,
-      firstName: req.data.firstName,
-      lastName: req.data.lastName,
-      age:req.data.age,
-      dob:req.data.dob,
-      department: req.data.department
+    /*'req.body' because its sent in 
+      the body raw format in JSON*/
+
+     studentId: req.body.firstname,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      age:req.body.age,
+      dob:req.body.dob,
+      
 
   })
 
@@ -63,8 +65,25 @@ router.post('/add', function(req, res, next) {
   });
   
 
+
+}); 
+
+
+/*Fetches data from Mongo Db Collection*/
+router.get('/list', function(req, res, next) {
   
-});
+  StudentModel.find(function(err, response){
+    if (err)
+    res.send(err);
+    else
+    res.send({status: 200, students:response});
+    
+  });
+  
+
+  
+})
+
 
 
 
